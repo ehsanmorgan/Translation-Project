@@ -1,0 +1,17 @@
+{% load social_share %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>TUT</title>
+   </head>
+   <body>
+    <span class="congrats-text">You solved this challenge. Would you like to challenge your friends?</span>
+    <div class="social-lnks social-links-wrapper">
+     
+      <button>{% post_to_facebook object_or_url "<p style='color: blue;'>facebook</p>" %}</button>
+      <button> {% post_to_linkedin object_or_url %}</button>
+      <button>{% post_to_twitter "New Song: " object_or_url "<p style='color: blue;'>twitter</p>" %}</button>
+
+    </div>
+   </body>
+</html>
