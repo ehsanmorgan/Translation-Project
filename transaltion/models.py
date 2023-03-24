@@ -2,16 +2,12 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.utils.text import slugify
 
+
+
 # Create your models here.
 
 
-
-class Questions(models.Model):
-    class Meta:
-        verbose_name = _('Question')
-        verbose_name_plural = _('question-plural')
-        ordering = ('sort', )
-        
+class Questions(models.Model):      
     question = models.CharField(_('question'),max_length = 200)
     first_option = models.CharField(_('first_option'),max_length=200)
     second_option = models.CharField(_('second_option'),max_length=200)
@@ -23,8 +19,10 @@ class Questions(models.Model):
     slug = models.SlugField(null=True,blank=True)
     sort = models.IntegerField(_('Sort'), default=0, blank=True, null=True)
     active = models.BooleanField(_('Active'), default=False)
+
     
-    
+  
+
     
     
     

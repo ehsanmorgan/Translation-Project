@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.contrib import admin
 from tof.admin import TofAdmin, TranslationTabularInline
 from tof.decorators import tof_prefetch
 from .models import Questions
@@ -15,9 +14,7 @@ class QuestionsAdmin(TofAdmin):
     
     
     
-    @tof_prefetch('question')
-    def get_queryset(self, request):
-        return super().get_queryset(request)
+    
 
 
 admin.site.register(Questions,QuestionsAdmin)
