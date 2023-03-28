@@ -1,8 +1,0 @@
-#from .models import Questions
-#from modeltranslation.translator import translator, TranslationOptions
-#from .translation import questionTranslationOptions
-
-
-#class questionTranslationOptions(TranslationOptions):
-    #fields= ('question','first_option','second_option','third_option','fourth_option')
-    #translator.register(Questions, questionTranslationOptions)
