@@ -9,6 +9,9 @@ from modeltranslation.admin import TranslationAdmin
 
 
 
+
+
+
 class adminquestion(TranslationAdmin):
     pass
 
