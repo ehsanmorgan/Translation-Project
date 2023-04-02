@@ -10,4 +10,4 @@ class questionsTranslation(TranslationOptions):
     
     
     
-translator.register(Questions, questionsTranslation)
+translator.register(Questions)

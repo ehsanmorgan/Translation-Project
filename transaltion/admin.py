@@ -13,7 +13,7 @@ from modeltranslation.admin import TranslationAdmin
 
 
 class adminquestion(TranslationAdmin):
-    list_display=('first_option')
+    pass
     group_fieldsets = True
 
     class Media:
