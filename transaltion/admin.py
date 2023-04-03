@@ -9,13 +9,10 @@ from modeltranslation.admin import TranslationAdmin
 
 
 
+@admin.register(Questions)
 
-
-
-class adminquestion(TranslationAdmin):
-    pass
-    group_fieldsets = True
-
+class NewsAdmin(TranslationAdmin):
+    list_display=('question','first_option','second_option')
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
@@ -26,7 +23,6 @@ class adminquestion(TranslationAdmin):
             'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
         }
 
-admin.site.register(Questions)
 
     
     

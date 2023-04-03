@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+   
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'tof',
     'django_social_share',
     'modeltranslation',
+    'django.contrib.admin',
     'transaltion',
   
 ]
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'ar'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -160,3 +161,5 @@ LOCALE_PATHS=[
 
 
 MODELTRANSLATION_DEFAULT_LANGUAGE='en'
+
+MODELTRANSLATION_DEFAULT_LANGUAGES=('en','ar')
