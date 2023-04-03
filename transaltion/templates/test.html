@@ -1,7 +1,12 @@
 
 
 {% for x in test %}
-    <h1>{{x.first_option}}</h1>
+    <h1>{{x}}</h1>
     
 {% endfor %}
     
+
+
+<a href="{% url 'set-language' 'en' %}">EN</a>
+<a href="{% url 'set-language' 'ar' %}">AR</a>
+

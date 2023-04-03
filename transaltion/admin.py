@@ -13,6 +13,7 @@ from modeltranslation.admin import TranslationAdmin
 
 class NewsAdmin(TranslationAdmin):
     list_display=('question','first_option','second_option')
+    group_fieldsets = True
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
