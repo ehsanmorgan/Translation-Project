@@ -11,14 +11,8 @@ class Questions(models.Model):
     question = models.CharField(_('question'),max_length = 200)
     first_option = models.CharField(_('first_option'),max_length=200)
     second_option = models.CharField(_('second_option'),max_length=200)
-    third_option = models.CharField(_('third_option'),max_length=200)
-    fourth_option = models.CharField(_('fourth_option'),max_length=200)
-    short_answer = models.TextField(_('short_answer'),max_length=1000)
-    correct_answer = models.CharField(_('correct_answer'),max_length=200)
-    order = models.IntegerField(_('order'),)
     slug = models.SlugField(null=True,blank=True)
-    sort = models.IntegerField(_('Sort'), default=0, blank=True, null=True)
-    active = models.BooleanField(_('Active'), default=False)
+   
 
     
   
@@ -33,6 +27,7 @@ class Questions(models.Model):
     
     def save(self, *args, **kwargs):
         self.slug = slugify(self.question)
+        
         super(Questions, self).save(*args, **kwargs)
         
         
