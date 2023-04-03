@@ -152,7 +152,10 @@ LANGUAGES=(
 )
 
 
-LOCALE_PATHS=['locale']
+LOCALE_PATHS=[
+    BASE_DIR/ ['locale/'],
+]
+
 
 
 
