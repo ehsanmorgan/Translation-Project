@@ -12,11 +12,18 @@ class Questions(models.Model):
     first_option = models.CharField(_('first_option'),max_length=200)
     second_option = models.CharField(_('second_option'),max_length=200)
     slug = models.SlugField(null=True,blank=True)
+    
+    
+    
+    
+    
    
 
     
   
 
+    
+    
     
     
     
