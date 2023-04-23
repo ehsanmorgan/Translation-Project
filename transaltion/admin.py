@@ -9,6 +9,8 @@ from modeltranslation.admin import TranslationAdmin
 
 
 
+
+
 @admin.register(Questions)
 class NewsAdmin(TranslationAdmin):
     list_display=('question','first_option','second_option')
