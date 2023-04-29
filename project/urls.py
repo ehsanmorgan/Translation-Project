@@ -23,6 +23,7 @@ from transaltion.views import test_translation, set_language
 
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('transaltion/', include('transaltion.urls',namespace='transaltion')),
