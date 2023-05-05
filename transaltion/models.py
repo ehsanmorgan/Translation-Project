@@ -7,6 +7,8 @@ from django.utils.text import slugify
 # Create your models here.
 
 
+
+
 class Questions(models.Model):      
     question = models.CharField(_('question'),max_length = 200)
     first_option = models.CharField(_('first_option'),max_length=200)
