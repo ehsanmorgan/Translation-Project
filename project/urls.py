@@ -33,6 +33,8 @@ urlpatterns = [
 
 
 
+
+
 urlpatterns=[
        *i18n_patterns(*urlpatterns, prefix_default_language=False),
         path("set_language/<str:language>", set_language, name="set-language"),
